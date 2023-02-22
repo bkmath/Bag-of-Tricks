@@ -6,6 +6,7 @@ def newtons_method(f, df, x0, e):
     while delta > e:
         x0 = x0 - f(x0)/df(x0)
         delta = dx(f, x0)
+    return x0
 
 
 def f(x):
